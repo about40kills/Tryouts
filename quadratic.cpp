@@ -2,26 +2,35 @@
 #include <cmath>
 using namespace std;
 
-int main() {
-    double a, b, c,disc, root1, root2;
-    cout<<"Enter a: ";
+int main () {
+    int a, b, c;
+    sring root_1, root_2;
+    cout<<"enter values for a: ";
     cin>>a;
-    cout<<"Enter b: ";
+    cout<<"enter values for b: ";
     cin>>b;
-    cout<<"Enter c: ";
+    cout<<"enter values for c: ";
     cin>>c;
-    disc = b * b - 4 * a * c;
-    if(disc < 0)
-    cout<<"Roots are imaginary";
-    else{
-      root1 = (-b + sqrt(disc))/(2 * a);
-      root2 = (-b - sqrt(disc))/(2 * a);
-      cout<<"Root 1 is "<<root1<<"and Root 2 is "<<root2<<endl;
+
+    double disc = b * b - 4 * a * c;
+
+    if (disc < 0 ){
+        cout<<"Roots are imaginary ";
+
+        else
+        double root_1 = (- b + sqrt(disc)) / 2 * a;
+        double root_2 = (- b - sqrt(disc)) / 2 * a;
     }
-      if(root1==root2)
-      cout<<"Equal Roots ";
-      else{
-        cout<<"Unequal Roots ";
-      }
+    cout<<root_1<<endl;
+    cout<<root_2<<endl;
+    
+    if (root_1 = root_2){
+        cout<<"Roots are equal";
+
+        else
+        cout<<"Roots are unequal";
+    }
+
     return 0;
+
 }
