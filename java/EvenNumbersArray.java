@@ -41,7 +41,7 @@ public class EvenNumbersArray {
         }
 
         // Calculate the standard deviation
-        double standardDeviation = Math.sqrt(sumOfSquaredDifferences / (numbers.length - 1));
+        double standardDeviation = Math.sqrt(sumOfSquaredDifferences / (numbers.length));
 
         return standardDeviation;
     }
