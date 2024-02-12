@@ -12,4 +12,5 @@ enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }
     System.out.println("What size do you want");
     String FreshJuiceSize = input.next(); 
     System.out.println("This is a " + FreshJuiceSize + " sized freshjuice");
-} }
+} 
+}
