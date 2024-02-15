@@ -5,12 +5,12 @@ public class KnustGradingSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many students took the test?");
-        int numbStudents = scanner.nextInt();
+        int NumofStudents = scanner.nextInt();
         scanner.nextLine();
 
-        String[] indexNumbers = new String[numbStudents];
-        int[] finalScores = new int[numbStudents];
-        char[] grades = new char[numbStudents];
+        String[] indexNumbers = new String[NumofStudents];
+        int[] finalScores = new int[NumofStudents];
+        char[] grades = new char[NumofStudents];
 
         final double thirtyPercent = 0.30;
         final double seventyPercent = 0.70;
@@ -19,7 +19,7 @@ public class KnustGradingSystem {
         int maxScore = Integer.MIN_VALUE; 
         int minScore = Integer.MAX_VALUE;       
         int[] gradeFrequency = new int[6]; 
-        for (int i = 0; i < numbStudents; i++) {
+        for (int i = 0; i < NumofStudents; i++) {
             System.out.println("\nEnter the details of student " + (i + 1) + ":");
 
             System.out.println("Enter index number: ");
@@ -75,10 +75,10 @@ public class KnustGradingSystem {
             grades[i] = grade;
         }
 
-        double averageScore = (double) sumFinalScores / numbStudents;
+        double averageScore = (double) sumFinalScores / NumofStudents;
 
         System.out.println("\nINDEX NO\tFINAL SCORE\tGRADE ");
-        for (int i = 0; i < numbStudents; i++) {
+        for (int i = 0; i < NumofStudents; i++) {
             System.out.println(indexNumbers[i] + "\t\t" + finalScores[i] + "\t\t" + grades[i]);
         }
 
