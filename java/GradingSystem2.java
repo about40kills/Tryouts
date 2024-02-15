@@ -55,6 +55,8 @@ public class GradingSystem2 {
         // Check if the student is repeated
         if (!eligibleForCertificate) {
             System.out.println("You are repeated.");
+
+            input.close();
         }
     }
 }

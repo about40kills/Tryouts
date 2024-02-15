@@ -91,6 +91,8 @@ public class StudentGrade {
         char[] gradeLabels = {'A', 'B', 'C', 'D', 'E', 'F'};
         for (int i = 0; i < gradeFrequency.length; i++) {
             System.out.println(gradeLabels[i] + ": " + gradeFrequency[i]);
+
+            scanner.close();
         }
     }
 }

@@ -41,5 +41,7 @@ public class MyProgram {
     // Display the standard deviation
     System.out.println("The standard deviation of the array is:");
     System.out.println(standardDeviation);
+
+    input.close();
   }
 }
