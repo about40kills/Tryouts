@@ -14,7 +14,7 @@ public class KnustGradingSystem {
         int[] finalScores = new int[NumofStudents];
         char[] grades = new char[NumofStudents];
 
-        final double thirtyPercent = 0.30;
+        final double thirtyPercent = 0.30;//constants are declared by prefixing "final" to their datatype
         final double seventyPercent = 0.70;
 
         int sumFinalScores = 0; 
