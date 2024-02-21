@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class KnustGradingSystem {
+public class StudentGrade {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

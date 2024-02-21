@@ -1,3 +1,5 @@
+// Opoku Davis 
+// Index: 3406422
 import java.util.Scanner;
 
 public class KnustGradingSystem {
