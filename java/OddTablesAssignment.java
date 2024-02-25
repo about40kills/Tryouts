@@ -1,15 +1,17 @@
+/*Name: Opoku Davis
+Index: 3406422*/
 import java.util.Scanner;
 
-public class OddTables {
+public class OddTablesAssignment {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner matrix = new Scanner(System.in);
 
         int[][] array = new int[3][3];
         int[] oddNumbers = new int[9];
         System.out.println("Enter the first 9 odd numbers:");
         for (int i = 0; i < 9; i++) {
-            int number = input.nextInt();
+            int number = matrix.nextInt();
             if (number % 2 != 0) {
                 oddNumbers[i] = number;
             } else {
@@ -25,14 +27,14 @@ public class OddTables {
             }
         }
 
-        int leadingDiagonalProduct = array[0][0] * array[1][1] * array[2][2];
-        int trailingDiagonalProduct = array[0][2] * array[1][1] * array[2][0];
-        int difference = trailingDiagonalProduct - leadingDiagonalProduct;
+        int LeadingDiagonalProduct = array[0][0] * array[1][1] * array[2][2];
+        int TrailingDiagonalProduct = array[0][2] * array[1][1] * array[2][0];
+        int difference = TrailingDiagonalProduct - LeadingDiagonalProduct;
 
-        array[0][1] = leadingDiagonalProduct;
+        array[0][1] = LeadingDiagonalProduct;
         array[1][1] = difference;
 
-        array[2][1] = trailingDiagonalProduct;
+        array[2][1] = TrailingDiagonalProduct;
 
         int sum = 0;
         for (int i = 0; i < 3; i++) {
@@ -76,7 +78,7 @@ public class OddTables {
                 System.out.print(array[i][j]+ "\t");
             }
             System.out.println();
-            input.close();
+            matrix.close();
         }
     }
 }
