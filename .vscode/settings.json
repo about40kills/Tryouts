@@ -1,5 +1,22 @@
 {
     "files.associations": {
         "iostream": "cpp"
-    }
+    },
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MSSQL",
+            "name": "A New Database Connection",
+            "password": "MysqlDavis12345",
+            "database": "New connection",
+            "username": "root"
+        }
+    ]
 }
